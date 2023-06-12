@@ -1,4 +1,10 @@
 import Express from "express";
 
-const route = Express.Router()
+const router = express.Router();
 
+
+router.get('/about', (req, res) => {
+  res.send('This is the About page');
+});
+
+export default router;
